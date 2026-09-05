@@ -1,0 +1,6 @@
+node_modules/
+server/data/db.json
+.env
+.DS_Store
+1Fi1-redesigned-submission.zip
+1Fi1-preview-fix.zip
