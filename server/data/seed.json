@@ -1,0 +1,600 @@
+{
+  "products": [
+    {
+      "_id": "prod_iphone15",
+      "id": "prod_iphone15",
+      "name": "iPhone 15",
+      "brand": "Apple Premium Reseller",
+      "category": "Smartphones",
+      "image": "/static/products/iphone15.jpg",
+      "imageBg": "#F4EEFF",
+      "shortDescription": "128 GB · Dynamic Island · 48 MP camera",
+      "description": "iPhone 15 with Dynamic Island, a 48 MP main camera and the powerful A16 Bionic chip. Designed for durability with a Ceramic Shield front and colour-infused glass back.",
+      "highlights": [
+        "6.1-inch Super Retina XDR display",
+        "A16 Bionic chip",
+        "48 MP Main camera with 2x optical zoom",
+        "Up to 20 hours video playback",
+        "USB-C connector"
+      ],
+      "price": 79900,
+      "mrp": 84900,
+      "rating": 4.7,
+      "reviewCount": 1842,
+      "emiTagline": "No-cost EMIs up to 24 months",
+      "variants": [
+        {
+          "variantId": "ip15-128",
+          "label": "128 GB · Black",
+          "price": 79900,
+          "mrp": 84900,
+          "badge": "Most popular"
+        },
+        {
+          "variantId": "ip15-256",
+          "label": "256 GB · Black",
+          "price": 89900,
+          "mrp": 99900,
+          "badge": ""
+        },
+        {
+          "variantId": "ip15-512",
+          "label": "512 GB · Black",
+          "price": 109900,
+          "mrp": 119900,
+          "badge": "Best value"
+        }
+      ],
+      "emiPlans": [
+        {
+          "tenureMonths": 3,
+          "monthlyAmount": 26634,
+          "totalAmount": 79902,
+          "interestRatePercent": 0,
+          "cashback": 0,
+          "isRecommended": false
+        },
+        {
+          "tenureMonths": 6,
+          "monthlyAmount": 13317,
+          "totalAmount": 79902,
+          "interestRatePercent": 0,
+          "cashback": 0,
+          "isRecommended": false
+        },
+        {
+          "tenureMonths": 12,
+          "monthlyAmount": 6658,
+          "totalAmount": 79896,
+          "interestRatePercent": 0,
+          "cashback": 750,
+          "isRecommended": true
+        },
+        {
+          "tenureMonths": 18,
+          "monthlyAmount": 4439,
+          "totalAmount": 79902,
+          "interestRatePercent": 0,
+          "cashback": 0,
+          "isRecommended": false
+        },
+        {
+          "tenureMonths": 24,
+          "monthlyAmount": 3329,
+          "totalAmount": 79896,
+          "interestRatePercent": 0,
+          "cashback": 1500,
+          "isRecommended": false
+        }
+      ]
+    },
+    {
+      "_id": "prod_iphone15pro",
+      "id": "prod_iphone15pro",
+      "name": "iPhone 15 Pro",
+      "brand": "Apple Premium Reseller",
+      "category": "Smartphones",
+      "image": "/static/products/iphone15pro.jpg",
+      "imageBg": "#EFEEFE",
+      "shortDescription": "256 GB · Titanium · A17 Pro chip",
+      "description": "iPhone 15 Pro in titanium, with the A17 Pro chip, a customizable Action button and the most powerful iPhone camera system yet.",
+      "highlights": [
+        "6.1-inch Super Retina XDR ProMotion display",
+        "A17 Pro chip with 6-core GPU",
+        "Pro camera system: 48 MP Main, 12 MP Ultra Wide, 12 MP Telephoto",
+        "Titanium with textured matte glass back",
+        "USB-C with USB 3 speeds"
+      ],
+      "price": 134900,
+      "mrp": 144900,
+      "rating": 4.8,
+      "reviewCount": 921,
+      "emiTagline": "No-cost EMIs up to 36 months",
+      "variants": [
+        {
+          "variantId": "ip15pro-256",
+          "label": "256 GB · Natural Titanium",
+          "price": 134900,
+          "mrp": 144900,
+          "badge": "Most popular"
+        },
+        {
+          "variantId": "ip15pro-512",
+          "label": "512 GB · Natural Titanium",
+          "price": 154900,
+          "mrp": 164900,
+          "badge": ""
+        },
+        {
+          "variantId": "ip15pro-1tb",
+          "label": "1 TB · Natural Titanium",
+          "price": 194900,
+          "mrp": 204900,
+          "badge": "Max storage"
+        }
+      ],
+      "emiPlans": [
+        {
+          "tenureMonths": 6,
+          "monthlyAmount": 22483,
+          "totalAmount": 134898,
+          "interestRatePercent": 0,
+          "cashback": 0,
+          "isRecommended": false
+        },
+        {
+          "tenureMonths": 12,
+          "monthlyAmount": 11242,
+          "totalAmount": 134904,
+          "interestRatePercent": 0,
+          "cashback": 1500,
+          "isRecommended": false
+        },
+        {
+          "tenureMonths": 18,
+          "monthlyAmount": 7494,
+          "totalAmount": 134892,
+          "interestRatePercent": 0,
+          "cashback": 0,
+          "isRecommended": true
+        },
+        {
+          "tenureMonths": 24,
+          "monthlyAmount": 5621,
+          "totalAmount": 134904,
+          "interestRatePercent": 0,
+          "cashback": 1500,
+          "isRecommended": false
+        },
+        {
+          "tenureMonths": 36,
+          "monthlyAmount": 3747,
+          "totalAmount": 134892,
+          "interestRatePercent": 0,
+          "cashback": 2500,
+          "isRecommended": false
+        }
+      ]
+    },
+    {
+      "_id": "prod_macbookair",
+      "id": "prod_macbookair",
+      "name": "MacBook Air 13",
+      "brand": "Apple Premium Reseller",
+      "category": "Laptops",
+      "image": "/static/products/macbookair.jpg",
+      "imageBg": "#EEF7FF",
+      "shortDescription": "M3 · 8 GB · 256 GB SSD · Midnight",
+      "description": "MacBook Air with the M3 chip delivers incredible performance, up to 18 hours of battery life and a stunning Liquid Retina display in a thin, light design.",
+      "highlights": [
+        "Apple M3 chip with 8-core CPU",
+        "13.6-inch Liquid Retina display",
+        "Up to 18 hours battery life",
+        "Liquid Retina display with True Tone",
+        "Fanless silent operation"
+      ],
+      "price": 114900,
+      "mrp": 124900,
+      "rating": 4.8,
+      "reviewCount": 612,
+      "emiTagline": "No-cost EMIs up to 24 months",
+      "variants": [
+        {
+          "variantId": "mba-m3-256",
+          "label": "M3 · 8 GB · 256 GB",
+          "price": 114900,
+          "mrp": 124900,
+          "badge": ""
+        },
+        {
+          "variantId": "mba-m3-512",
+          "label": "M3 · 8 GB · 512 GB",
+          "price": 134900,
+          "mrp": 144900,
+          "badge": "Recommended"
+        },
+        {
+          "variantId": "mba-m3-512-16",
+          "label": "M3 · 16 GB · 512 GB",
+          "price": 154900,
+          "mrp": 164900,
+          "badge": "Power user"
+        }
+      ],
+      "emiPlans": [
+        {
+          "tenureMonths": 6,
+          "monthlyAmount": 19150,
+          "totalAmount": 114900,
+          "interestRatePercent": 0,
+          "cashback": 0,
+          "isRecommended": false
+        },
+        {
+          "tenureMonths": 12,
+          "monthlyAmount": 9575,
+          "totalAmount": 114900,
+          "interestRatePercent": 0,
+          "cashback": 1000,
+          "isRecommended": true
+        },
+        {
+          "tenureMonths": 18,
+          "monthlyAmount": 6384,
+          "totalAmount": 114912,
+          "interestRatePercent": 0,
+          "cashback": 0,
+          "isRecommended": false
+        },
+        {
+          "tenureMonths": 24,
+          "monthlyAmount": 4788,
+          "totalAmount": 114912,
+          "interestRatePercent": 0,
+          "cashback": 2000,
+          "isRecommended": false
+        }
+      ]
+    },
+    {
+      "_id": "prod_samsungtv",
+      "id": "prod_samsungtv",
+      "name": "Samsung Crystal 4K TV",
+      "brand": "Croma",
+      "category": "TVs",
+      "image": "/static/products/samsungtv.jpg",
+      "imageBg": "#FEF3E7",
+      "shortDescription": "55-inch · 4K UHD · Crystal Processor 4K",
+      "description": "Stunning 4K resolution on a 55-inch Crystal display with PurColour and Crystal Processor 4K upscaling for sharper, more vivid pictures.",
+      "highlights": [
+        "55-inch 4K UHD Crystal Display",
+        "Crystal Processor 4K with HDR",
+        "Smart TV powered by Tizen",
+        "3 HDMI ports, 1 USB port",
+        "Dolby Digital Plus audio"
+      ],
+      "price": 47990,
+      "mrp": 64900,
+      "rating": 4.4,
+      "reviewCount": 421,
+      "emiTagline": "No-cost EMIs up to 18 months",
+      "variants": [
+        {
+          "variantId": "tv-43",
+          "label": "43-inch",
+          "price": 34990,
+          "mrp": 49900,
+          "badge": "Compact"
+        },
+        {
+          "variantId": "tv-55",
+          "label": "55-inch",
+          "price": 47990,
+          "mrp": 64900,
+          "badge": "Most popular"
+        },
+        {
+          "variantId": "tv-65",
+          "label": "65-inch",
+          "price": 72990,
+          "mrp": 94900,
+          "badge": "Cinema"
+        }
+      ],
+      "emiPlans": [
+        {
+          "tenureMonths": 3,
+          "monthlyAmount": 15997,
+          "totalAmount": 47991,
+          "interestRatePercent": 0,
+          "cashback": 0,
+          "isRecommended": false
+        },
+        {
+          "tenureMonths": 6,
+          "monthlyAmount": 7998,
+          "totalAmount": 47988,
+          "interestRatePercent": 0,
+          "cashback": 0,
+          "isRecommended": false
+        },
+        {
+          "tenureMonths": 9,
+          "monthlyAmount": 5332,
+          "totalAmount": 47988,
+          "interestRatePercent": 0,
+          "cashback": 500,
+          "isRecommended": true
+        },
+        {
+          "tenureMonths": 12,
+          "monthlyAmount": 3999,
+          "totalAmount": 47988,
+          "interestRatePercent": 0,
+          "cashback": 500,
+          "isRecommended": false
+        },
+        {
+          "tenureMonths": 18,
+          "monthlyAmount": 2666,
+          "totalAmount": 47988,
+          "interestRatePercent": 0,
+          "cashback": 0,
+          "isRecommended": false
+        }
+      ]
+    },
+    {
+      "_id": "prod_airpods",
+      "id": "prod_airpods",
+      "name": "AirPods Pro (2nd gen)",
+      "brand": "Apple Premium Reseller",
+      "category": "Audio",
+      "image": "/static/products/airpods.jpg",
+      "imageBg": "#F2F7EF",
+      "shortDescription": "Active Noise Cancellation · USB-C MagSafe case",
+      "description": "AirPods Pro with the H2 chip deliver up to 2x more Active Noise Cancellation. Adaptive Audio blends ANC and Transparency mode automatically.",
+      "highlights": [
+        "Active Noise Cancellation",
+        "Adaptive Audio",
+        "Personalized Spatial Audio",
+        "Up to 6 hours listening on a single charge",
+        "USB-C MagSafe charging case"
+      ],
+      "price": 24900,
+      "mrp": 26900,
+      "rating": 4.7,
+      "reviewCount": 2841,
+      "emiTagline": "No-cost EMIs up to 12 months",
+      "variants": [
+        {
+          "variantId": "ap-usbc",
+          "label": "USB-C MagSafe case",
+          "price": 24900,
+          "mrp": 26900,
+          "badge": "Latest"
+        }
+      ],
+      "emiPlans": [
+        {
+          "tenureMonths": 3,
+          "monthlyAmount": 8300,
+          "totalAmount": 24900,
+          "interestRatePercent": 0,
+          "cashback": 0,
+          "isRecommended": false
+        },
+        {
+          "tenureMonths": 6,
+          "monthlyAmount": 4150,
+          "totalAmount": 24900,
+          "interestRatePercent": 0,
+          "cashback": 250,
+          "isRecommended": true
+        },
+        {
+          "tenureMonths": 12,
+          "monthlyAmount": 2075,
+          "totalAmount": 24900,
+          "interestRatePercent": 0,
+          "cashback": 500,
+          "isRecommended": false
+        }
+      ]
+    },
+    {
+      "_id": "prod_watch",
+      "id": "prod_watch",
+      "name": "Apple Watch Series 9",
+      "brand": "Apple Premium Reseller",
+      "category": "Wearables",
+      "image": "/static/products/applewatch.jpg",
+      "imageBg": "#FFF0F6",
+      "shortDescription": "41 mm · GPS · Pink Aluminium",
+      "description": "Apple Watch Series 9 with the S9 chip and a magical new Double Tap gesture. A brighter display, more health features and Apple Wideband U1 chip.",
+      "highlights": [
+        "S9 SiP with 4-core Neural Engine",
+        "Double Tap gesture",
+        "Always-On Retina display",
+        "Blood Oxygen and ECG apps",
+        "Up to 18 hours of battery life"
+      ],
+      "price": 41900,
+      "mrp": 44900,
+      "rating": 4.6,
+      "reviewCount": 514,
+      "emiTagline": "No-cost EMIs up to 12 months",
+      "variants": [
+        {
+          "variantId": "aw9-41-gps",
+          "label": "41 mm · GPS · Pink",
+          "price": 41900,
+          "mrp": 44900,
+          "badge": ""
+        },
+        {
+          "variantId": "aw9-45-gps",
+          "label": "45 mm · GPS · Pink",
+          "price": 44900,
+          "mrp": 47900,
+          "badge": "Larger display"
+        },
+        {
+          "variantId": "aw9-45-cellular",
+          "label": "45 mm · Cellular · Pink",
+          "price": 54900,
+          "mrp": 57900,
+          "badge": "Cellular"
+        }
+      ],
+      "emiPlans": [
+        {
+          "tenureMonths": 3,
+          "monthlyAmount": 13967,
+          "totalAmount": 41901,
+          "interestRatePercent": 0,
+          "cashback": 0,
+          "isRecommended": false
+        },
+        {
+          "tenureMonths": 6,
+          "monthlyAmount": 6983,
+          "totalAmount": 41898,
+          "interestRatePercent": 0,
+          "cashback": 0,
+          "isRecommended": false
+        },
+        {
+          "tenureMonths": 12,
+          "monthlyAmount": 3492,
+          "totalAmount": 41904,
+          "interestRatePercent": 0,
+          "cashback": 500,
+          "isRecommended": true
+        }
+      ]
+    },
+    {
+      "_id": "prod_caratlane_ring",
+      "id": "prod_caratlane_ring",
+      "name": "Classic Diamond Solitaire Ring",
+      "brand": "CaratLane",
+      "category": "Jewellery",
+      "image": "/static/products/ring.jpg",
+      "imageBg": "#FFF7EC",
+      "shortDescription": "0.25 ct · 14kt Gold · VS clarity",
+      "description": "A timeless solitaire crafted in 14kt gold, set with a brilliant-cut 0.25 ct diamond of VS clarity. Includes CaratLane authenticity certificate.",
+      "highlights": [
+        "0.25 ct brilliant-cut diamond",
+        "14kt yellow gold band",
+        "VS clarity, G-H colour",
+        "Includes authenticity certificate",
+        "Free nationwide shipping"
+      ],
+      "price": 34999,
+      "mrp": 42999,
+      "rating": 4.7,
+      "reviewCount": 188,
+      "emiTagline": "No-cost EMIs up to 6 months",
+      "variants": [
+        {
+          "variantId": "ring-14kt",
+          "label": "14kt Gold · Size 16",
+          "price": 34999,
+          "mrp": 42999,
+          "badge": ""
+        },
+        {
+          "variantId": "ring-18kt",
+          "label": "18kt Gold · Size 16",
+          "price": 49999,
+          "mrp": 57999,
+          "badge": "Premium"
+        }
+      ],
+      "emiPlans": [
+        {
+          "tenureMonths": 3,
+          "monthlyAmount": 11666,
+          "totalAmount": 34998,
+          "interestRatePercent": 0,
+          "cashback": 0,
+          "isRecommended": true
+        },
+        {
+          "tenureMonths": 6,
+          "monthlyAmount": 5833,
+          "totalAmount": 34998,
+          "interestRatePercent": 0,
+          "cashback": 0,
+          "isRecommended": false
+        }
+      ]
+    },
+    {
+      "_id": "prod_cgh_earth",
+      "id": "prod_cgh_earth",
+      "name": "CGH Earth 3-Night Goa Stay",
+      "brand": "CGH Earth",
+      "category": "Travel",
+      "image": "/static/products/goa.jpg",
+      "imageBg": "#EAF7F2",
+      "shortDescription": "3 nights · 2 guests · breakfast included",
+      "description": "Three nights at a CGH Earth boutique stay in Goa for two guests, with daily breakfast and one sunset experience included.",
+      "highlights": [
+        "3 nights / 4 days in Goa",
+        "Daily breakfast for two",
+        "One guided sunset experience",
+        "Free room upgrade on availability",
+        "Free cancellation up to 7 days"
+      ],
+      "price": 32990,
+      "mrp": 38990,
+      "rating": 4.8,
+      "reviewCount": 89,
+      "emiTagline": "No-cost EMIs up to 12 months",
+      "variants": [
+        {
+          "variantId": "goa-3n-2p",
+          "label": "3 nights · 2 guests",
+          "price": 32990,
+          "mrp": 38990,
+          "badge": "Most popular"
+        },
+        {
+          "variantId": "goa-5n-2p",
+          "label": "5 nights · 2 guests",
+          "price": 49990,
+          "mrp": 59990,
+          "badge": "Extended stay"
+        }
+      ],
+      "emiPlans": [
+        {
+          "tenureMonths": 3,
+          "monthlyAmount": 10996,
+          "totalAmount": 32988,
+          "interestRatePercent": 0,
+          "cashback": 0,
+          "isRecommended": false
+        },
+        {
+          "tenureMonths": 6,
+          "monthlyAmount": 5498,
+          "totalAmount": 32988,
+          "interestRatePercent": 0,
+          "cashback": 0,
+          "isRecommended": false
+        },
+        {
+          "tenureMonths": 12,
+          "monthlyAmount": 2749,
+          "totalAmount": 32988,
+          "interestRatePercent": 0,
+          "cashback": 500,
+          "isRecommended": true
+        }
+      ]
+    }
+  ]
+}

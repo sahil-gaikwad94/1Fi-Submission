@@ -1,0 +1,22 @@
+{
+  "name": "1fi-marketplace",
+  "version": "1.0.0",
+  "private": true,
+  "description": "1Fi Marketplace - MERN SDE Intern Assignment",
+  "main": "server/index.js",
+  "scripts": {
+    "install:all": "npm install && npm --prefix client install && npm --prefix server install",
+    "dev:server": "npm --prefix server run dev",
+    "dev:client": "npm --prefix client run dev",
+    "dev:both": "concurrently -k -n SERVER,CLIENT -c blue,magenta \"npm:dev:server\" \"npm:dev:client\"",
+    "build": "npm --prefix client run build",
+    "start": "node server/index.js",
+    "seed": "node server/scripts/seed.js"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

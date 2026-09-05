@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <radialGradient id="dia" cx="50%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="60%" stop-color="#D9E3F2"/>
+      <stop offset="100%" stop-color="#84A2C7"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#FFE6A6"/>
+      <stop offset="50%" stop-color="#E7B85C"/>
+      <stop offset="100%" stop-color="#A77A20"/>
+    </linearGradient>
+  </defs>
+  <path d="M40 130 L100 40 L160 130 L160 170 L40 170 Z" fill="url(#gold)"/>
+  <ellipse cx="100" cy="60" rx="20" ry="14" fill="url(#dia)"/>
+  <circle cx="92" cy="56" r="3" fill="#FFFFFF" opacity="0.85"/>
+</svg>
