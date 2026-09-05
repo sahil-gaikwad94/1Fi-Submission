@@ -4,7 +4,7 @@
 
 **Live demo:** [onefi-submission.onrender.com](https://onefi-submission.onrender.com)
 
-out-of-assignment: https://emi-marketplace-1m7l.onrender.com/
+out-of-assignment, but similar work: https://emi-marketplace-1m7l.onrender.com/
 
 
 I built this project as a marketplace experience inside the 1Fi app. The idea is to let users browse products from trusted brands, view product details, choose a suitable variant, and purchase through a no-cost EMI plan backed by their investments.
