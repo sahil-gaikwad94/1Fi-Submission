@@ -4,6 +4,9 @@
 
 **Live demo:** [onefi-submission.onrender.com](https://onefi-submission.onrender.com)
 
+out-of-assignment: https://emi-marketplace-1m7l.onrender.com/
+
+
 I built this project as a marketplace experience inside the 1Fi app. The idea is to let users browse products from trusted brands, view product details, choose a suitable variant, and purchase through a no-cost EMI plan backed by their investments.
 
 I focused on keeping the experience simple, mobile-first, and easy to understand. The interface uses the purple visual language associated with 1Fi, but with clearer hierarchy, more readable typography, stronger product cards, and a smoother path from discovery to checkout.
