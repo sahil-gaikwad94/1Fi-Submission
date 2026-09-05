@@ -1,133 +1,143 @@
-# 1Fi Marketplace — SDE Intern Assignment
+# 1Fi Marketplace
 
-A complete **MERN** implementation of the **1Fi Marketplace** section inside the Shop page of the existing 1Fi app, built as per the assignment PDF.
+## SDE Intern Assignment Submission
 
-LINK TO DEMO: (https://onefi-submission.onrender.com)
+**Live demo:** [onefi-submission.onrender.com](https://onefi-submission.onrender.com)
 
-## What's inside
+I built this project as a marketplace experience inside the 1Fi app. The idea is to let users browse products from trusted brands, view product details, choose a suitable variant, and purchase through a no-cost EMI plan backed by their investments.
 
-- **Server**: Node.js + Express + Mongoose (with a JSON-file fallback when `MONGO_URI` is not set, so it runs out-of-the-box on Render free tier).
-- **Client**: React + Vite, single-page app with mobile-first UI matching the 1Fi design language (purple `#6E2EE6` primary, rounded cards, soft shadows, bottom navigation).
-- **Three shop tabs**:
-  - **Top Brands** — blank placeholder (per assignment).
-  - **Nearby Stores** — blank placeholder (per assignment).
-  - **1Fi Marketplace** — fully implemented (product list → variants → EMI plan selection → proceed CTA).
-- **Dynamic data** coming from `GET /api/products` and `GET /api/products/:id` — no hard-coded UI strings for products / EMI plans.
-- **Loading + error states** on every async view.
+I focused on keeping the experience simple, mobile-first, and easy to understand. The interface uses the purple visual language associated with 1Fi, but with clearer hierarchy, more readable typography, stronger product cards, and a smoother path from discovery to checkout.
 
-## Folder layout
+## What I implemented
+
+The Shop section includes three options: Top Brands, Nearby Stores, and the 1Fi Marketplace. The Marketplace is the main assignment flow and includes product discovery, search, brand filtering, product details, variants, EMI plans, and order confirmation.
+
+Users can search for products such as iPhones, filter the collection by brand, open a product, compare variants, select an EMI tenure, and continue with the selected plan. I also added loading, error, empty-result, and retry states so the interface remains understandable when data is loading or unavailable.
+
+The bottom navigation includes Home, Shop, EMI Dues, Limit, and Profile. The assignment-specific marketplace flow is fully implemented, while the remaining navigation destinations have clear placeholder states for future expansion.
+
+## Tech stack
+
+| Layer | Technology |
+| --- | --- |
+| Frontend | React 18 and Vite |
+| Routing | React Router |
+| Backend | Node.js and Express |
+| Database | MongoDB through Mongoose, with JSON-file fallback |
+| Styling | Custom responsive CSS |
+| Deployment | Render single web service |
+
+## Project structure
 
 ```
-1fi-marketplace/
-├── package.json                # root scripts (install:all, build, start)
+.
+├── client/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── App.jsx
+│   │   ├── api.js
+│   │   └── styles.css
+│   ├── index.html
+│   └── vite.config.js
 ├── server/
-│   ├── package.json
-│   ├── index.js                # express app, serves client dist + API
-│   ├── db.js                   # mongoose + JSON fallback persistence
-│   ├── seed.js                 # one-shot seed (called automatically on boot)
-│   ├── data/seed.json          # mock products, brands, EMI plans
-│   ├── models/Product.js
-│   ├── models/Order.js
-│   └── routes/products.js
-│   └── routes/orders.js
-└── client/
-    ├── package.json
-    ├── vite.config.js          # proxies /api → http://localhost:4000 in dev
-    ├── index.html
-    └── src/
-        ├── main.jsx
-        ├── App.jsx
-        ├── api.js              # tiny fetch wrapper
-        ├── styles.css          # 1Fi design tokens
-        ├── components/
-        │   ├── BottomNav.jsx
-        │   ├── ProductCard.jsx
-        │   ├── EMISelector.jsx
-        │   └── Spinner.jsx
-        └── pages/
-            ├── Shop.jsx        # tab toggle: Top Brands / Nearby Stores / 1Fi Marketplace
-            ├── Marketplace.jsx # product grid
-            ├── ProductDetail.jsx
-            ├── Home.jsx        # placeholder consistent with 1Fi home
-            └── Placeholder.jsx # "Top Brands" / "Nearby Stores" empty state
+│   ├── data/seed.json
+│   ├── models/
+│   ├── routes/
+│   ├── db.js
+│   └── index.js
+├── package.json
+└── README.md
 ```
 
-## Local development
+## Running the project locally
+
+First, install the dependencies from the root directory:
 
 ```bash
-# from the repo root
-npm run install:all              # installs root, client, and server deps
-npm run dev:both                 # runs server (4000) + Vite client (5173) concurrently
-# open http://localhost:5173
+npm run install:all
 ```
 
-## Deploy on Render (single Web Service)
+To run the frontend and backend together in development mode:
 
-1. Push this repo to GitHub.
-2. On Render → **New +** → **Web Service** → pick the repo.
-3. Settings:
-   - **Build Command**: `npm run install:all && npm run build`
-   - **Start Command**: `npm start`
-   - **Environment**: `PORT=10000`, optionally `MONGO_URI=<your mongo atlas uri>`.
-4. Render will install all dependencies, build the React client into `client/dist`, and the Express server will serve both the API and the SPA on the same port.
-
-If you don't set `MONGO_URI`, the server automatically uses an on-disk JSON file store (`server/data/db.json`) so it works on the free tier without an external DB.
-
-## API contract (used by the client)
-
-| Method | Path                       | Purpose                                    |
-|--------|----------------------------|--------------------------------------------|
-| GET    | `/api/products`            | List Marketplace products (with brand)     |
-| GET    | `/api/products/:id`        | Product detail incl. variants + EMI plans  |
-| GET    | `/api/brands`              | Brand chips used in the Marketplace filter |
-| POST   | `/api/orders`              | Create an order with chosen EMI plan       |
-| GET    | `/api/orders`              | List past orders (for the success screen)  |
-| GET    | `/api/health`              | Health check                               |
-
-`POST /api/orders` body:
-```json
-{
-  "productId": "...",
-  "variantId": "...",
-  "emiPlanTenureMonths": 12,
-  "fullName": "...",
-  "phone": "..."
-}
+```bash
+npm run dev:both
 ```
 
-## Implementation notes / checklist mapping
+The Vite frontend runs at:
 
-| Assignment item | Where it lives |
-|---|---|
-| Shop page with three options | `client/src/pages/Shop.jsx` |
-| Top Brands + Nearby Stores blank | `client/src/pages/Placeholder.jsx` |
-| Product listing for 1Fi Marketplace | `client/src/pages/Marketplace.jsx`, `server/routes/products.js` |
-| Product image / name / price / MRP | `ProductCard.jsx`, `seed.json` |
-| Product variants | `ProductDetail.jsx`, `seed.json` `variants[]` |
-| EMI options / plans + relevant details | `EMISelector.jsx`, `seed.json` `emiPlans[]` |
-| Ability to select an EMI plan | `EMISelector.jsx` (radio list, live monthly + total) |
-| CTA to proceed with the selected plan | `ProductDetail.jsx` "Proceed with this plan" → `POST /api/orders` |
-| Dynamic data, no UI hardcoding | Centralised `seed.json`, served from API, consumed via `client/src/api.js` |
-| Mock APIs / data sources | `seed.json` + JSON file fallback in `server/db.js` |
-| UI consistency (purple, rounded, bottom nav) | `client/src/styles.css` tokens, `BottomNav.jsx` |
-| Loading + error states | `Spinner.jsx` + retry buttons in `Marketplace.jsx`, `ProductDetail.jsx` |
-| Render-deployable | `server/index.js` `app.use(express.static(client/dist))`, root `npm start` |
+```
+http://localhost:5173
+```
+
+The Express API runs at:
+
+```
+http://localhost:4000
+```
+
+To run the production-style server locally:
+
+```bash
+npm start
+```
+
+The production server builds the React client before starting Express. The complete app is then available at:
+
+```
+http://localhost:4000
+```
+
+## Render deployment
+
+I deployed the application as a single Render Web Service. Express serves both the API and the compiled React application, which keeps the deployment simple and avoids needing separate frontend and backend services.
+
+Use the following Render settings:
+
+| Setting | Value |
+| --- | --- |
+| Build command | `npm run install:all && npm run build` |
+| Start command | `npm start` |
+| Environment variable | `PORT=10000` |
+| Optional environment variable | `MONGO_URI` |
+
+If `MONGO_URI` is not provided, the server uses the included JSON-file fallback so the project can run without a separate database service.
+
+## API routes
+
+| Method | Route | Purpose |
+| --- | --- | --- |
+| GET | `/api/health` | Check whether the server is running |
+| GET | `/api/products` | Fetch marketplace products |
+| GET | `/api/products/:id` | Fetch one product with variants and EMI plans |
+| GET | `/api/brands` | Fetch available marketplace brands |
+| POST | `/api/orders` | Create an order for a selected EMI plan |
+| GET | `/api/orders` | Fetch created orders |
+
+The product list and EMI plan data are served through the API instead of being duplicated inside the React components. This makes it easier to replace the mock data with a real database or external service later.
+
+## Assignment flow
+
+The main user journey is:
+
+```
+Shop → 1Fi Marketplace → Search or filter products → Product details → Choose variant → Choose EMI plan → Proceed → Order confirmation
+```
+
+The product detail page displays the product image, brand, rating, pricing, savings, description, highlights, available variants, EMI plans, cashback information, and the monthly payment CTA.
+
+## Design decisions
+
+I used a mobile-first layout because the original product is a finance application and the marketplace is expected to be used primarily on smaller screens. Cards, pills, and bottom navigation make the experience familiar for mobile users, while the layout expands into a responsive grid on wider screens.
+
+I kept the color scheme close to the 1Fi visual identity and used purple for primary actions, selected states, and important marketplace interactions. Product images are stored locally in the server public directory so the deployed application does not depend on third-party image URLs at runtime.
+
+I also prioritized readable body text, visible savings, clear EMI explanations, and useful empty states. These details help users understand the financial commitment before proceeding.
+
+## Notes
+
+This project uses mock marketplace and order data for the assignment. The database layer is structured so MongoDB can be enabled through `MONGO_URI`, while the JSON fallback keeps the application easy to run locally and on a free Render instance.
 
 
 
-### Verified interaction checklist
-
-- Search products by keyword, submit with Enter, and clear search with one tap.
-- Filter by brand chips and reset filters from the empty state.
-- Open a product from any card, switch variants, choose an EMI tenure, and submit an order.
-- Confirm the order-success screen with the selected plan and monthly payment.
-- Navigate Home, Shop, EMI Dues, Limit, and Profile from the persistent bottom navigation.
-- Serve the SPA and `/api/*` routes from one Express process in production.
-
-### Render settings
-
-- **Build command:** `npm run install:all && npm run build`
-- **Start command:** `npm start`
-- **Environment:** `PORT=10000` (optional `MONGO_URI` remains supported)
-
-The local photo assets are downloaded by `scripts/download-assets.sh` and the seed paths are updated by `scripts/update-image-paths.js`. The downloaded images are already included in this submission, so the script is only needed when refreshing assets.
+[2]: https://onefi-submission.onrender.com "1Fi Marketplace live demo" paths are updated by `scripts/update-image-paths.js`. The downloaded images are already included in this submission, so the script is only needed when refreshing assets.
