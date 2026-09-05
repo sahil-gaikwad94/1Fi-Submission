@@ -114,9 +114,6 @@ If you don't set `MONGO_URI`, the server automatically uses an on-disk JSON file
 | Render-deployable | `server/index.js` `app.use(express.static(client/dist))`, root `npm start` |
 
 
-## UI/UX redesign update
-
-The marketplace UI has been refreshed into a modern, mobile-first 1Fi experience while keeping the original assignment architecture and API contract intact. The redesign adds a clearer brand hierarchy, stronger marketplace entry point, accessible typography, higher-contrast cards, product ratings, live result counts, clear filter/search states, a sticky EMI CTA, and working routes for every bottom-navigation item. Product cards and product detail now use locally bundled product photography under `server/public/products`, so Render does not depend on a third-party image host at runtime.
 
 ### Verified interaction checklist
 
