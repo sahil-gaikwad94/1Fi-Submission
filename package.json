@@ -10,6 +10,7 @@
     "dev:client": "npm --prefix client run dev",
     "dev:both": "concurrently -k -n SERVER,CLIENT -c blue,magenta \"npm:dev:server\" \"npm:dev:client\"",
     "build": "npm --prefix client run build",
+    "prestart": "npm run build",
     "start": "node server/index.js",
     "seed": "node server/scripts/seed.js"
   },
@@ -20,3 +21,4 @@
     "node": ">=18.0.0"
   }
 }
+
