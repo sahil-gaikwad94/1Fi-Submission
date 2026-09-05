@@ -2,7 +2,7 @@
 
 A complete **MERN** implementation of the **1Fi Marketplace** section inside the Shop page of the existing 1Fi app, built as per the assignment PDF.
 
-LINK TO DEMO: [https://onefi1.onrender.com](https://onefi-submission.onrender.com)
+LINK TO DEMO: (https://onefi-submission.onrender.com)
 
 ## What's inside
 
